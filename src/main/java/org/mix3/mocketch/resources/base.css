@@ -1,0 +1,194 @@
+@charset "shift_jis";
+
+/* -- 以下は削除不可 変更は可能です -- */
+#footer #csslink a,
+#footer #csslink a:hover { text-decoration: none; }
+
+/* -- 変更可能部分 配置とサイズ -- */
+#footer #csslink {
+  text-align: right;
+  font-size: 80%;
+  margin: 0;
+  padding: 0 20px 5px 0;
+}
+
+/* -- 変更可能部分 色 -- */
+#footer #csslink,
+#footer #csslink a,
+#footer #csslink a:hover { color: #006699; }
+
+#footer #csslink,
+#footer #csslink a,
+#footer #csslink a:hover { background-color: #003366; }
+
+/*----------------------------------------------------------
+  レイアウト関係
+----------------------------------------------------------*/
+
+/*---------------------------------フォントサイズなど*/
+body {
+  text-align: center;
+  font-size: 85%;
+  font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3" sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------------------------ページ全体を包括*/
+#wrapper {
+  text-align: left;
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0px 0px;
+}
+
+/*---------------------------------ヘッダー部分*/
+#header {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 20px 5px 20px;
+  background-color: #003366;
+  color: #ffffff;
+}
+
+/*---------------------------------コンテンツ部分 サイドバー部分 包括*/
+#container {
+  width: 100%;
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0px 0px;
+  border-left: 1px solid #003366;
+  border-right: 1px solid #003366;
+}
+
+/*---------------------------------コンテンツ部分*/
+#contents {
+  width: 80%;
+  float: right;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  border-left: 1px solid #003366;
+}
+
+.contents-inner {
+  margin: 20px 20px 20px 20px;
+  padding: 0px 0px 0px 0px;
+}
+
+/*---------------------------------サイドバー部分*/
+#sidebar {
+  width: 15%;
+  float: left;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.sidebar-inner {
+  margin: 20px 10px 20px 10px;
+  padding: 0px 0px 0px 0px;
+}
+
+/*---------------------------------アンダーナビ部分*/
+#undernavi {
+  text-align: center;
+  clear: both;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
+  border-top: 1px solid #003366;
+}
+
+/*---------------------------------フッター部分*/
+#footer {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background-color: #003366;
+  color: #ffffff;
+}
+
+/*----------------------------------------------------------
+  メニュー部分の指定
+----------------------------------------------------------*/
+.menu {
+  margin: 0px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.menu li a {
+  text-decoration: none;
+  width: 170px;
+  display: block;
+  margin: 0px 0px 1px 0px;
+  padding: 5px 5px 5px 5px;
+  background-color: #cccccc;
+  color: #000033;
+  overflow: hidden;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+  background-color: #003366;
+  color: #ffffff;
+}
+
+/*----------------------------------------------------------
+  ヘッダー内の指定
+----------------------------------------------------------*/
+
+/* -- 見出し -- */
+h1 {
+  font-size: 150%;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/*----------------------------------------------------------
+  コンテンツ内の指定
+----------------------------------------------------------*/
+h2 {
+  font-size: 120%;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+h3 { }
+
+h4 { }
+
+h5 { }
+
+h6 { }
+
+/* -- 文字 -- */
+p {
+  margin: 0px 0px 0.5em 0px;
+  padding: 0px 0px 0px 0px;
+  line-height: 1.5em;
+}
+
+/* -- リスト -- */
+#contents ul { }
+
+#contents ol { }
+
+#contents li { }
+
+/*----------------------------------------------------------
+  アンダーナビ内の指定
+----------------------------------------------------------*/
+#undernavi p {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/*----------------------------------------------------------
+  著作権表記
+----------------------------------------------------------*/
+#footer p {
+  margin: 0px 0px 0px 0px;
+  padding: 0.5em 0 0.5em 0;
+}

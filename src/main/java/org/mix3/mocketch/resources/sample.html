@@ -1,0 +1,101 @@
+<strong>UIモックアップ ‐ サンプル</strong>
+
+<div wicket:id="feedback" />
+
+<form meta:table="parent" wicket:id="parent">
+	<label>Parent Name: </label>
+	<input wicket:id="name" type="text" require="true"/>
+	<input type="submit" />
+</form>
+
+<ul>
+	<li meta:table="parent" wicket:id="parent_list" num="3">
+        	<label>Parent Name: </label>
+        	<span wicket:id="name" />
+		<ul>
+			<li meta:table="child" wicket:id="child_list">
+		        	<label>Child Name: </label>
+		        	<span wicket:id="name" />
+		        </li>
+		</ul>
+		<form meta:table="child" wicket:id="child">
+			<label>Child Name: </label>
+			<input wicket:id="name" type="text" />
+			<input type="submit" />
+		</form>
+        </li>
+</ul>
+<span wicket:id="paging" target="parent_list" />
+
+<!--// ---------------------- //-->
+
+<strong>UIモックアップ ‐ サンプル</strong>
+
+<div wicket:id="feedback" />
+
+<form meta:table="person" wicket:id="person_form">
+	<label>First Name: </label>
+	<input wicket:id="firstName" type="text" require="true" />
+	
+	<label>Last Name: </label>
+	<input wicket:id="lastName" type="text" />
+	
+	<label>Age: </label>
+	<input wicket:id="age" type="text" />
+	
+	<label>weight: </label>
+	<input wicket:id="weight" type="text" />
+	
+	<label>Tag: </label>
+	<select meta:table="tag" meta:column="name" wicket:id="tag">
+		<option>tag1</option>
+		<option>tag2</option>
+		<option>tag3</option>
+	</select>
+	
+	<input type="submit" />
+</form>
+
+<table>
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Age</th>
+		<th>Weight</th>
+		<th>Tag</th>
+	</tr>
+	<tr meta:table="person" wicket:id="person_table">
+		<td><span wicket:id="firstName" /></td>
+		<td><span wicket:id="lastName" /></td>
+    	<td><span wicket:id="age" /></td>
+    	<td><span wicket:id="weight" /></td>
+    	<td><span meta:table="tag" meta:column="name" wicket:id="tag" /></td>
+	</tr>
+</table>
+
+<ul style="border: solid 1px #AAA;">
+	<li meta:table="person" wicket:id="person_list">
+    	<label>First Name: </label>
+    	<span wicket:id="firstName" />
+    	<label>Last Name: </label>
+    	<span wicket:id="lastName" />
+    	<label>Age: </label>
+    	<span wicket:id="age" />
+    	<label>Weight: </label>
+    	<span wicket:id="weight" />
+    	<label>Tag: </label>
+    	<span meta:table="tag" meta:column="name" wicket:id="tag" />
+	</li>
+</ul>
+
+<form meta:table="tag" wicket:id="tag_form">
+	<label>Tag: </label>
+	<input wicket:id="name" type="text" />
+	<input type="submit" />
+</form>
+<ul style="border: solid 1px #AAA;">
+	<li meta:table="tag" wicket:id="tag_list">
+		<label>Tag: </label>
+		<span wicket:id="name" />
+	</li>
+</ul>

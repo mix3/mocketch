@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>モックアップ作成支援システム</title>
+<link rel="stylesheet" href="../resources/base.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<!-- ヘッダー始まり -->
+<div id="header">
+<h1>モックアップ作成支援システム</h1>
+</div>
+<!-- // header END -->
+<div id="container">
+<div id="contents">
+<div class="contents-inner">
+<!-- ここから本文記入 -->
+
+	<form wicket:id="input">
+		<table width="100%">
+			<tr><td align="right">Name:</td><td><input type="text" style="width: 100%;" wicket:id="name" /></td></tr>
+			<tr><td colspan="2" align="center"><textarea name="msg" cols="35" rows="14" wrap="off"  style="width: 100%;" wicket:id="html"></textarea></td></tr>
+			<tr><td colspan="2" align="center"><input type="submit" /></td></tr>
+		</table>
+	</form>
+	
+<!-- // 本文ココまで*-->
+</div>
+<!-- // contents-inner END -->
+</div>
+<!-- // contents END -->
+<div id="sidebar">
+<div class="sidebar-inner">
+<!-- サイドバーここから -->
+
+	<strong>リスト</strong>
+	<ul>
+		<li wicket:id="list">
+			<a href="#" wicket:id="link">link</a> 
+			<a href="#" wicket:id="edit">[編集]</a>
+		</li>
+	</ul>
+
+<!-- // サイドバーここまで -->
+</div>
+<!-- // sidebar-inner END -->
+</div>
+<!-- // sidebar END -->
+<div id="undernavi">
+<p><a href="../index.html" wicket:id="home">Home</a></p>
+</div>
+<!-- // undernavi END -->
+</div>
+<!-- // container END -->
+<div id="footer">
+<!-- 著作権表記部分 -->
+<p>Copyright &copy; 瀬戸 航. All Rights Reserved.</p>
+<!-- 
+著作権表記 スタイルシート(CSS)レイアウト
+以下の部分は削除しないで下さい。 CSSによる大きさ、色の変更は可能です。
+-->
+<p id="csslink">Template <a href="http://css.rakugan.com/" target="_blank">スタイルシート(CSS)レイアウト</a></p>
+</div>
+<!-- // footer END -->
+</div>
+<!-- // wrapper END -->
+</body>
+</html>
